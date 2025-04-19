@@ -1,0 +1,302 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover {
+    color: #333;
+}
+
+img {
+    vertical-align: middle;
+}
+input {
+    font-size: 100%;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+:focus {
+    outline: 0
+}
+
+input::placeholder {
+    color: #333;
+}
+body {
+    font-family: Tahoma, Arial, \5FAE\8F6F\96C5\9ED1, sans-serif;
+    font-size: 14px;
+    color: #333;
+    line-height: 1.5;
+    background: #f1f1f1 url('../images/bg.jpeg') repeat bottom fixed;
+}
+.wrapper {
+    margin: 0 auto;
+    width: 1000px;
+    background-color: #fff;
+}
+header{
+    height: 70px;
+    background-color: #d20f26;
+    margin: 0 auto;
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    line-height: 40px;
+}
+header .logo{
+    display: block;
+    font-size: 24px;
+    color: #fff;
+    font-weight: 500;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+nav a{
+    margin: 0 20px;
+    padding: 0 5px;
+    font-size: 16px;
+    color: #fff;
+}
+nav .current,
+nav a:hover{
+    color: #f1f912;
+}
+nav .login_bar {
+    margin-left: 10px;
+}
+nav .login_bar a{
+    margin: 0;
+    padding: 0;
+}
+
+.banner{
+    position: relative;
+}
+.banner_txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    font-size: 18px;
+}
+.banner_txt  h1,.banner_txt h2{
+    margin-bottom: 5px;
+    font-size: 40px;
+}
+/* 轮播图 */
+.carousel-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.3s ease;
+}
+
+.carousel-item {
+    flex: 0 0 100%;
+    height: 539px;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 指示器样式 */
+.carousel-indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 5px;
+}
+
+.indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.indicator.active {
+    background-color: #fff;
+}
+
+/* 导航箭头 */
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 30px;
+}
+
+.arrow-prev {
+  left: 10px;
+}
+
+.arrow-next {
+  right: 10px;
+}
+
+.section{
+    width: 1000px;
+    margin: 0 auto;
+    padding: 30px;
+}
+.section_hd{
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+    border-bottom: 1px solid #d1d1d1;
+}
+.section_hd span{
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: #d20f26;
+}
+.section_hd h2{
+    font-size: 24px;
+    font-weight: 500;
+    color: #d20f26;
+}
+.section_bd {
+    padding: 0 20px;
+}
+.intro_section p{
+    margin-top: 10px;
+    line-height: 26px;
+}
+.intro_section .lft_img{
+    float: left;
+    margin-right: 20px;
+    width: 300px;
+}
+
+.pics_ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pics_ul li {
+    margin: 20px 10px 10px 0;
+    width: 290px;
+    background-color: #fff;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.pics_ul li:nth-child(3n) {
+    margin-right: 0;
+}
+
+.pics_ul li p {
+    margin: 10px 20px 0;
+    color: #333;
+    text-indent: 0;
+}
+
+.pics_ul li .title{
+    font-size: 16px;
+}
+
+.pics_ul .pics_img {
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.pics_ul .pics_img img {
+    transition: transform 0.3s ease;
+}
+
+.pics_ul .pics_img img:hover {
+    transform: scale(1.2);
+}
+
+footer{
+    margin-top: 30px;
+    clear: both;
+    background-color: #d20f26;
+    padding: 15px 0;
+    color: #f1f1f1;
+    text-align: center;
+}
+
+.page .banner img {
+    width: 100%;
+}
+.section_bar{
+    margin: 20px 0 0;
+    background-color: #fff;
+}
+.section_bar h3{
+    font-size: 20px;
+    text-align: center;
+}
+
+.bar_intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0;
+    padding: 20px 40px;
+    background-color: #fff;
+}
+.bar_intro .bar_txt{
+    margin: 20px;
+    width: 590px;
+}
+.bar_intro h3{
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+.bar_intro p{
+    margin-bottom: 10px;
+    text-indent: 0;
+}

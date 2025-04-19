@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>汉阳归元庙会</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <a class="logo" href="index.html">
+                汉阳归元庙会
+            </a>
+            <nav>
+                <a class="current" href="index.html">首页</a>
+                <a href="lsyy.html">历史渊源</a>
+                <a href="mhct.html">庙会传统</a>
+                <a href="mhhd.html">庙会活动</a>
+            </nav>
+        </header>
+        
+        <div class="container">
+            <div class="banner">
+                <div class="banner_txt">
+                    <h1>汉阳 · 归元庙会</h1>
+                    <p>演绎民俗文化、集聚百姓乐事、祈祝福寿安康、展现时代风采</p>
+                </div>
+                <div class="carousel-container">
+                    <div class="carousel-track">
+                        <div class="carousel-item">
+                            <img src="images/banner01.jpg" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/banner02.jpg" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/banner03.jpg" alt="">
+                        </div>
+                    </div>
+                    <!-- 指示器 -->
+                    <div class="carousel-indicators"></div>
+                    <!-- 导航箭头 -->
+                    <div class="carousel-arrow arrow-prev">&lt;</div>
+                    <div class="carousel-arrow arrow-next">&gt;</div>
+                </div>
+            </div>
+        
+            <div class="section intro_section">
+                <div class="section_hd">
+                    <h2>汉阳归元庙会 · 简介</h2>
+                </div>
+                <div class="section_bd">
+                    <img class="lft_img" src="images/about.jpeg" alt="">
+                    <p>汉阳归元庙会，湖北省武汉市汉阳区民俗，国家级非物质文化遗产之一。</p>
+                    <p>汉阳归元庙会是在湖北省武汉市汉阳区归元寺定期举办的传统民俗活动文化空间。清代中叶汉阳庙会已颇具名气，早期庙会活动开展的时间一般从农历正月初十至十五，采用过汉阳文化赶集会、汉阳元宵文化庙会等名称，后来发展到活动时间从农历正月初六、初八到正月十五，名称也于2001年正式定名为武汉归元庙会，每年春节前后众多香客进香祈福，游客如织，以正月初九为最盛，新春祈福仪式与民俗活动结合是该庙会的特色。
+                    </p>
+        
+                </div>
+        
+            </div>
+        </div>
+        
+        <footer>
+            <p>&copy; 汉阳归元庙会 版权所有</p>
+        </footer>
+    </div>
+    
+    <script src="js/carousel.js"></script>
+    <script>
+        window.onload = function () {
+            // 初始化轮播图
+            const carousel = new Carousel(document.querySelector('.carousel-container'));
+        }
+    </script>
+</body>
+</html>
